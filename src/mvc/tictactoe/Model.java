@@ -13,9 +13,9 @@ public class Model implements MessageHandler {
   private final Messenger mvcMessaging;
 
   // Model's data variables
-  private int variable1;
-  private int variable2;
-
+  private boolean gameOver;
+  private boolean whoseMove;
+  private String[][] board;
   /**
    * Model constructor: Create the data representation of the program
    * @param messages Messaging class instantiated by the Controller for 
@@ -30,9 +30,26 @@ public class Model implements MessageHandler {
    */
   public void init() {
     mvcMessaging.subscribe("view:changeButton", this);
-    setVariable1(10);
-    setVariable2(-10);
+    this.board = new String[3][3];
+    this.newGame();
+    this.mvcMessaging.subscribe("playerMove", this);
+    this.mvcMessaging.subscribe("newGame", this);
+
   }
+  
+    /**
+   * Reset the state for a new game
+   */
+  private void newGame() {
+    for(int row=0; row<this.board.length; row++) {
+      for (int col=0; col<this.board[0].length; col++) {
+        this.board[row][col] = "";
+      }
+    }
+    this.whoseMove = false;
+    this.gameOver = false;
+  }
+
   
   @Override
   public void messageHandler(String messageName, Object messagePayload) {
@@ -59,45 +76,4 @@ public class Model implements MessageHandler {
       }      
     }
   }
-
-  /**
-   * Getter function for variable 1
-   * @return Value of variable1
-   */
-  public int getVariable1() {
-    return variable1;
-  }
-
-  /**
-   * Setter function for variable 1
-   * @param v New value of variable1
-   */
-  public void setVariable1(int v) {
-    variable1 = v;
-    // When we set a new value to variable 1 we need to also send a
-    // message to let other modules know that the variable value
-    // was changed
-    mvcMessaging.notify("model:variable1Changed", variable1, true);
-  }
-  
-  /**
-   * Getter function for variable 1
-   * @return Value of variable2
-   */
-  public int getVariable2() {
-    return variable2;
-  }
-  
-  /**
-   * Setter function for variable 2
-   * @param v New value of variable 2
-   */
-  public void setVariable2(int v) {
-    variable2 = v;
-    // When we set a new value to variable 2 we need to also send a
-    // message to let other modules know that the variable value
-    // was changed
-    mvcMessaging.notify("model:variable2Changed", variable2, true);
-  }
-
 }
