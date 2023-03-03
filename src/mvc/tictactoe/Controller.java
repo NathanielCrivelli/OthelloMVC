@@ -25,7 +25,8 @@ public class Controller implements MessageHandler {
    * that one class works independently of the others.
    *
    * Messages that can be received in the Controller:
-   *  view:toggleButtonClick (sent by the View when the toggle button is clicked)
+   *  view:toggleButtonClick
+   * (sent by the View when the toggle button is clicked)
    *  view:buttonClick (sent by the View when the regular button is clicked)
    *  view:changeButton (sent by the View when the Up or Down buttons are clicked)
    * Message that are sent from the Controller:
@@ -78,5 +79,4 @@ public class Controller implements MessageHandler {
     Controller app = new Controller();  // Create our controller...
     app.init();                         // ...and init it too
   }
-  
 }
