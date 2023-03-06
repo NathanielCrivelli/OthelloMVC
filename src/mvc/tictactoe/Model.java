@@ -1,9 +1,10 @@
-Model.java:package mvc.tictactoe;
-import com.mrjaffesclass.apcs.messenger.*;
+package mvc.tictactoe;
 
+import com.mrjaffesclass.apcs.messenger.*;
+ 
 /**
  * The model represents the data that the app uses.
- * Model.java:67@author Roger Jaffe
+ * @author Roger Jaffe
  * @version 1.0
  */
 public class Model implements MessageHandler {
@@ -12,9 +13,10 @@ public class Model implements MessageHandler {
   private final Messenger mvcMessaging;
 
   // Model's data variables
-  private boolean gameOver;
   private boolean whoseMove;
+  private boolean gameOver;
   private String[][] board;
+
   /**
    * Model constructor: Create the data representation of the program
    * @param messages Messaging class instantiated by the Controller for 
@@ -28,7 +30,6 @@ public class Model implements MessageHandler {
    * Initialize the model here and subscribe to any required messages
    */
   public void init() {
-    mvcMessaging.subscribe("view:changeButton", this);
     this.board = new String[3][3];
     this.newGame();
     this.mvcMessaging.subscribe("playerMove", this);
@@ -52,7 +53,7 @@ public class Model implements MessageHandler {
   
   @Override
   public void messageHandler(String messageName, Object messagePayload) {
-    // Display the message to the console for debugging
+     // Display the message to the console for debugging
     if (messagePayload != null) {
       System.out.println("MSG: received by model: "+messageName+" | "+messagePayload.toString());
     } else {
@@ -84,6 +85,6 @@ public class Model implements MessageHandler {
       // Send the boardChange message along with the new board 
       this.mvcMessaging.notify("boardChange", this.board);
     }
+
   }
 }
-
