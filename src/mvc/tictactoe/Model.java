@@ -51,6 +51,7 @@ public class Model implements MessageHandler {
   }
 
   
+  
   @Override
   public void messageHandler(String messageName, Object messagePayload) {
      // Display the message to the console for debugging
@@ -76,6 +77,7 @@ public class Model implements MessageHandler {
         }
         // Send the boardChange message along with the new board 
         this.mvcMessaging.notify("boardChange", this.board);
+        this.whoseMove = !this.whoseMove;
       }
       
     // newGame message handler

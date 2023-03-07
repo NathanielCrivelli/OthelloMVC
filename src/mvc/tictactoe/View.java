@@ -50,14 +50,53 @@ public class View extends javax.swing.JFrame implements MessageHandler {
       jButton1.setText(board[0][0]);
       jButton2.setText(board[0][1]);
       jButton3.setText(board[0][2]);
-      jButton4.setText(board[1][0]);
+      jButton6.setText(board[1][0]);
       jButton5.setText(board[1][1]);
-      jButton6.setText(board[1][2]);
+      jButton4.setText(board[1][2]);
       jButton7.setText(board[2][0]);
       jButton8.setText(board[2][1]);
       jButton9.setText(board[2][2]);
     }
   }
+  
+      private String isWinner() {
+  // Get the text contents of each button.  
+  // Be sure you're accessing the
+  // buttons in the order you want.  
+  // The Netbeans UI sometimes mixes up
+  // the numbers on the button names so they're not in the 
+  // order you expect
+  String[][] status = new String[3][3];
+  status[0][0] = jButton1.getText();
+  status[0][1] = jButton2.getText();
+  status[0][2] = jButton3.getText();
+  status[1][0] = jButton4.getText();
+  status[1][1] = jButton5.getText();
+  status[1][2] = jButton6.getText();
+  status[2][0] = jButton9.getText();
+  status[2][1] = jButton8.getText();
+  status[2][2] = jButton7.getText();
+
+  // Check the rows and columns for a tic tac toe
+  for (int i=0; i<3; i++) {
+    if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
+      this.mvcMessaging.notify("gameOver");
+  }
+  
+  for(int i=1; i<3;i++) {
+    if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
+      this.mvcMessaging.notify("gameOver");
+  }
+
+  // Check the diagonals
+  if (status[0][0].equals(status[1][1]) && status[0][0].equals(status[2][2]))
+    this.mvcMessaging.notify("gameOver");
+  if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
+    this.mvcMessaging.notify("gameOver");
+
+  // If we haven't found it, then return a blank string
+  return "";
+}
 
 
   /**
@@ -82,72 +121,90 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton1.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton1.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton1.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton1.setName("00"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton2.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton2.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton2.setName("01"); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton3.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton3.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton3.setName("02"); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton4.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton4.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton4.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton4.setName("12"); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton5.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton5.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton5.setName("11"); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton6.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton6.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton6.setName("10"); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton7.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton7.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton7.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton7.setName("20"); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton8.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton8.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton8.setName("21"); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
+        jButton9.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton9.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton9.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton9.setName("22"); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
