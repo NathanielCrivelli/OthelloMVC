@@ -80,19 +80,19 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   // Check the rows and columns for a tic tac toe
   for (int i=0; i<3; i++) {
     if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
-      this.mvcMessaging.notify("gameOver");
+      return status[i][0];
   }
   
   for(int i=1; i<3;i++) {
     if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
-      this.mvcMessaging.notify("gameOver");
+      return status[0][i];
   }
 
   // Check the diagonals
   if (status[0][0].equals(status[1][1]) && status[0][0].equals(status[2][2]))
-    this.mvcMessaging.notify("gameOver");
+    return status[0][0];
   if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
-    this.mvcMessaging.notify("gameOver");
+    return status[0][2];
 
   // If we haven't found it, then return a blank string
   return "";
@@ -268,6 +268,10 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     private void onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onClick
         JButton button = (JButton)evt.getSource();
         this.mvcMessaging.notify("playerMove", button.getName());
+        String winner = this.isWinner();
+        if(!winner.equals("")) {
+            this.mvcMessaging.notify("gameOver");
+        }
     }//GEN-LAST:event_onClick
 
   /**

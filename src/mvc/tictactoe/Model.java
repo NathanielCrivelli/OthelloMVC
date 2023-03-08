@@ -61,6 +61,11 @@ public class Model implements MessageHandler {
       System.out.println("MSG: received by model: "+messageName+" | No data sent");
     }
     
+    if (messageName.equals("gameOver")) {
+        this.gameOver = true;
+        System.out.println("MSG: received by model: "+messageName+" | gameOver = "+gameOver);
+    }
+    
     // playerMove message handler
     if (messageName.equals("playerMove")) {
       // Get the position string and convert to row and col
