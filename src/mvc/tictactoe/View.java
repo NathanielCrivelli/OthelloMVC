@@ -31,7 +31,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     mvcMessaging.subscribe("model:variable1Changed", this);
     mvcMessaging.subscribe("model:variable2Changed", this);
     this.mvcMessaging.subscribe("boardChange", this);
-    this.mvcMessaging.subscribe("gameOver", this);
+    
 
   }
   
@@ -83,7 +83,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
       return status[i][0];
   }
   
-  for(int i=1; i<3;i++) {
+  for(int i=0; i<2;i++) {
     if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
       return status[0][i];
   }
@@ -93,12 +93,18 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     return status[0][0];
   if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
     return status[0][2];
-
+  
   // If we haven't found it, then return a blank string
   return "";
 }
 
-
+private boolean isTie() {
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 2; j++) {
+            board
+        }
+    }
+}
   /**
    * This method is called from within the constructor to initialize the form.
    * WARNING: Do NOT modify this code. The content of this method is always
@@ -271,6 +277,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         String winner = this.isWinner();
         if(!winner.equals("")) {
             this.mvcMessaging.notify("gameOver");
+            jLabel1.setText("Game over!");
         }
     }//GEN-LAST:event_onClick
 

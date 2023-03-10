@@ -34,6 +34,7 @@ public class Model implements MessageHandler {
     this.newGame();
     this.mvcMessaging.subscribe("playerMove", this);
     this.mvcMessaging.subscribe("newGame", this);
+    this.mvcMessaging.subscribe("gameOver", this);
 
   }
   
@@ -67,7 +68,7 @@ public class Model implements MessageHandler {
     }
     
     // playerMove message handler
-    if (messageName.equals("playerMove")) {
+    if (messageName.equals("playerMove") && this.gameOver == false) {
       // Get the position string and convert to row and col
       String position = (String)messagePayload;
       Integer row = new Integer(position.substring(0,1));
