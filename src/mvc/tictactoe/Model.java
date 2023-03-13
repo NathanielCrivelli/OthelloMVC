@@ -35,6 +35,7 @@ public class Model implements MessageHandler {
     this.mvcMessaging.subscribe("playerMove", this);
     this.mvcMessaging.subscribe("newGame", this);
     this.mvcMessaging.subscribe("gameOver", this);
+    this.mvcMessaging.subscribe("Tie", this);
 
   }
   
@@ -63,6 +64,11 @@ public class Model implements MessageHandler {
     }
     
     if (messageName.equals("gameOver")) {
+        this.gameOver = true;
+        System.out.println("MSG: received by model: "+messageName+" | gameOver = "+gameOver);
+    }
+    
+    if (messageName.equals("Tie")) {
         this.gameOver = true;
         System.out.println("MSG: received by model: "+messageName+" | gameOver = "+gameOver);
     }

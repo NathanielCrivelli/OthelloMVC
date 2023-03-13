@@ -78,12 +78,12 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   status[2][2] = jButton7.getText();
 
   // Check the rows and columns for a tic tac toe
-  for (int i=0; i<3; i++) {
+  for (int i=0; i<2; i++) {
     if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
       return status[i][0];
   }
   
-  for(int i=0; i<2;i++) {
+  for(int i=0; i<3;i++) {
     if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
       return status[0][i];
   }
@@ -94,17 +94,15 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
     return status[0][2];
   
+  if (status[0][0].isEmpty() && status[0][1].isEmpty() && status[0][2].isEmpty() && status[1][0].isEmpty() && status[1][1].isEmpty()
+          && status[1][2].isEmpty() && status[2][0].isEmpty() && status[2][1].isEmpty() && status [2][2].isEmpty()) {
+      return "Tie";
+  }
+  
   // If we haven't found it, then return a blank string
   return "";
 }
 
-private boolean isTie() {
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 2; j++) {
-            board
-        }
-    }
-}
   /**
    * This method is called from within the constructor to initialize the form.
    * WARNING: Do NOT modify this code. The content of this method is always
@@ -278,6 +276,8 @@ private boolean isTie() {
         if(!winner.equals("")) {
             this.mvcMessaging.notify("gameOver");
             jLabel1.setText("Game over!");
+        } else if (winner.equals("Tie")) {
+            this.mvcMessaging.notify("Tie");
         }
     }//GEN-LAST:event_onClick
 
