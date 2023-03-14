@@ -73,12 +73,14 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   status[1][0] = jButton4.getText();
   status[1][1] = jButton5.getText();
   status[1][2] = jButton6.getText();
-  status[2][0] = jButton9.getText();
+  status[2][0] = jButton7.getText();
   status[2][1] = jButton8.getText();
-  status[2][2] = jButton7.getText();
+  status[2][2] = jButton9.getText();
 
   // Check the rows and columns for a tic tac toe
-  for (int i=0; i<2; i++) {
+  
+     
+  for (int i=0; i<3; i++) {
     if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
       return status[i][0];
   }
@@ -94,8 +96,8 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
     return status[0][2];
   
-  if (status[0][0].isEmpty() && status[0][1].isEmpty() && status[0][2].isEmpty() && status[1][0].isEmpty() && status[1][1].isEmpty()
-          && status[1][2].isEmpty() && status[2][0].isEmpty() && status[2][1].isEmpty() && status [2][2].isEmpty()) {
+  if (!status[0][0].isEmpty() && !status[0][1].isEmpty() && !status[0][2].isEmpty() && !status[1][0].isEmpty() && !status[1][1].isEmpty()
+          && !status[1][2].isEmpty() && !status[2][0].isEmpty() && !status[2][1].isEmpty() && !status [2][2].isEmpty()) {
       return "Tie";
   }
   
@@ -273,11 +275,15 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         JButton button = (JButton)evt.getSource();
         this.mvcMessaging.notify("playerMove", button.getName());
         String winner = this.isWinner();
-        if(!winner.equals("")) {
+        if(winner.equals("X")) {
             this.mvcMessaging.notify("gameOver");
-            jLabel1.setText("Game over!");
+            jLabel1.setText("X Wins!");
+        } else if (winner.equals("O")) {
+            this.mvcMessaging.notify("gameOver");
+            jLabel1.setText("O Wins!");
         } else if (winner.equals("Tie")) {
             this.mvcMessaging.notify("Tie");
+            jLabel1.setText("Tie!");
         }
     }//GEN-LAST:event_onClick
 

@@ -70,7 +70,7 @@ public class Model implements MessageHandler {
     
     if (messageName.equals("Tie")) {
         this.gameOver = true;
-        System.out.println("MSG: received by model: "+messageName+" | gameOver = "+gameOver);
+        System.out.println("MSG: received by model: "+messageName+" | tie = "+gameOver);
     }
     
     // playerMove message handler
