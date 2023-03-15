@@ -39,6 +39,46 @@ public class Model implements MessageHandler {
 
   }
   
+      private String isWinner() {
+
+  // Check the rows and columns for a tic tac toe
+  
+     
+  for (int i=0; i<3; i++) {
+    if (board[i][0].equals(board[i][1]) && board[i][0].equals(board[i][2]) && whoseMove == true) {
+        this.mvcMessaging.notify("gameOverO", this.board);
+    } else if (board[i][0].equals(board[i][1]) && board[i][0].equals(board[i][2]) && whoseMove == false) {
+        this.mvcMessaging.notify("gameOverX", this.board);
+    }
+  }
+  
+  for(int i=0; i<3;i++) {
+    if (board[0][i].equals(board[1][i]) && board[0][i].equals(board[2][i])) {
+      this.mvcMessaging.notify("gameOver", this.board);
+    } else if (board[0][i].equals(board[1][i]) && board[0][i].equals(board[2][i])) {
+      this.mvcMessaging.notify("gameOver", this.board);
+    }
+  }
+
+  // Check the diagonals
+  if (board[0][0].equals(board[1][1]) && board[0][0].equals(board[2][2]) && whoseMove == true) {
+    this.mvcMessaging.notify("gameOverO", this.board);
+  } else if (board[0][0].equals(board[1][1]) && board[0][0].equals(board[2][2]) && whoseMove == false) {
+      this.mvcMessaging.notify("gameOverX", this.board);
+  }
+  
+  if (board[0][2].equals(board[1][1]) && board[0][2].equals(board[2][0]))
+    this.mvcMessaging.notify("gameOverO", this.board);
+  
+  if (!board[0][0].equals("") && !board[0][1].equals("") && !board[0][2].equals("") && !board[1][0].equals("") && !board[1][1].equals("")
+          && !board[1][2].equals("") && !board[2][0].equals("") && !board[2][1].equals("") && !board[2][2].equals("")) {
+      this.mvcMessaging.notify("Tie", this.board);
+  }
+  
+  // If we haven't found it, then return a blank string
+  return "";
+}
+  
     /**
    * Reset the state for a new game
    */

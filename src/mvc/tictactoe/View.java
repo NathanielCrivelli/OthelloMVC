@@ -13,6 +13,9 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
   private final Messenger mvcMessaging;
   
+  
+  private String winner;
+  
   /**
    * Creates a new view
    * @param messages mvcMessaging object
@@ -28,11 +31,10 @@ public class View extends javax.swing.JFrame implements MessageHandler {
    */
   public void init() {
     // Subscribe to messages here
-    mvcMessaging.subscribe("model:variable1Changed", this);
-    mvcMessaging.subscribe("model:variable2Changed", this);
     this.mvcMessaging.subscribe("boardChange", this);
-    
-
+    this.mvcMessaging.subscribe("gameOver", this);
+    this.mvcMessaging.subscribe("Tie", this);
+    winner = "";
   }
   
   @Override
@@ -57,53 +59,11 @@ public class View extends javax.swing.JFrame implements MessageHandler {
       jButton8.setText(board[2][1]);
       jButton9.setText(board[2][2]);
     }
-  }
-  
-      private String isWinner() {
-  // Get the text contents of each button.  
-  // Be sure you're accessing the
-  // buttons in the order you want.  
-  // The Netbeans UI sometimes mixes up
-  // the numbers on the button names so they're not in the 
-  // order you expect
-  String[][] status = new String[3][3];
-  status[0][0] = jButton1.getText();
-  status[0][1] = jButton2.getText();
-  status[0][2] = jButton3.getText();
-  status[1][0] = jButton4.getText();
-  status[1][1] = jButton5.getText();
-  status[1][2] = jButton6.getText();
-  status[2][0] = jButton7.getText();
-  status[2][1] = jButton8.getText();
-  status[2][2] = jButton9.getText();
-
-  // Check the rows and columns for a tic tac toe
-  
-     
-  for (int i=0; i<3; i++) {
-    if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
-      return status[i][0];
-  }
-  
-  for(int i=0; i<3;i++) {
-    if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
-      return status[0][i];
+    if (messageName.equals("gameOver")) {
+        winner = "Winner";
+    }
   }
 
-  // Check the diagonals
-  if (status[0][0].equals(status[1][1]) && status[0][0].equals(status[2][2]))
-    return status[0][0];
-  if (status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
-    return status[0][2];
-  
-  if (!status[0][0].isEmpty() && !status[0][1].isEmpty() && !status[0][2].isEmpty() && !status[1][0].isEmpty() && !status[1][1].isEmpty()
-          && !status[1][2].isEmpty() && !status[2][0].isEmpty() && !status[2][1].isEmpty() && !status [2][2].isEmpty()) {
-      return "Tie";
-  }
-  
-  // If we haven't found it, then return a blank string
-  return "";
-}
 
   /**
    * This method is called from within the constructor to initialize the form.
@@ -274,8 +234,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     private void onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onClick
         JButton button = (JButton)evt.getSource();
         this.mvcMessaging.notify("playerMove", button.getName());
-        String winner = this.isWinner();
-        if(winner.equals("X")) {
+        if(!winner.equals("") && ) {
             this.mvcMessaging.notify("gameOver");
             jLabel1.setText("X Wins!");
         } else if (winner.equals("O")) {
