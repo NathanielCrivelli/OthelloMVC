@@ -56,7 +56,7 @@ public class Controller implements MessageHandler {
     // This is where you would subscribe to any messages the controller
     // would need to process
     // A sample subscriber call would be like...
-    //mvcMessaging.subscribe("view:toggleButtonClick", this);
+    mvcMessaging.subscribe("view:toggleButtonClick", this);
   }
 
   @Override

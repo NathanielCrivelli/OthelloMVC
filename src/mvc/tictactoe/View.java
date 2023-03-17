@@ -55,7 +55,8 @@ public class View extends javax.swing.JFrame implements MessageHandler {
       jButton8.setText(board[2][1]);
       jButton9.setText(board[2][2]);
       
-      winner = this.isWinner();
+      
+        winner = this.isWinner();
     }
   }
 
@@ -73,18 +74,18 @@ public class View extends javax.swing.JFrame implements MessageHandler {
   status[1][0] = jButton4.getText();
   status[1][1] = jButton5.getText();
   status[1][2] = jButton6.getText();
-  status[2][0] = jButton9.getText();
+  status[2][0] = jButton7.getText();
   status[2][1] = jButton8.getText();
-  status[2][2] = jButton7.getText();
+  status[2][2] = jButton9.getText();
 
   // Check the rows and columns for a tic tac toe
   for (int i=0; i<3; i++) {
-    if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]))
+    if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]) && !status[i][0].equals(""))
       return status[i][0];
   }
   
-  for(int i=1; i<3;i++) {
-    if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]))
+  for(int i=0; i<3;i++) {
+    if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]) && !status[0][i].equals(""))
       return status[0][i];
   }
 
@@ -96,7 +97,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
   if (!status[0][0].equals("") && !status[0][1].equals("") && !status[0][2].equals("") && !status[1][0].equals("") && !status[1][1].equals("")
           && !status[1][2].equals("") && !status[2][0].equals("") && !status[2][1].equals("") && !status[2][2].equals("")) {
-      this.mvcMessaging.notify("Tie");
+      return "Tie";
   }
   // If we haven't found it, then return a blank string
   return "";
