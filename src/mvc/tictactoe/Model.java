@@ -51,8 +51,6 @@ public class Model implements MessageHandler {
     this.whoseMove = false;
     this.gameOver = false;
   }
-
-  
   
   @Override
   public void messageHandler(String messageName, Object messagePayload) {
@@ -75,6 +73,8 @@ public class Model implements MessageHandler {
     
     // playerMove message handler
     if (messageName.equals("playerMove") && this.gameOver == false) {
+       // Check the rows and columns for a tic tac toe
+    
       // Get the position string and convert to row and col
       String position = (String)messagePayload;
       Integer row = new Integer(position.substring(0,1));
