@@ -48,12 +48,12 @@ public class View extends javax.swing.JFrame implements MessageHandler {
       jButton1.setText(board[0][0]);
       jButton2.setText(board[0][1]);
       jButton3.setText(board[0][2]);
-      jButton6.setText(board[1][0]);
-      jButton5.setText(board[1][1]);
-      jButton4.setText(board[1][2]);
-      jButton7.setText(board[2][0]);
-      jButton8.setText(board[2][1]);
-      jButton9.setText(board[2][2]);
+      jButton9.setText(board[1][0]);
+      jButton10.setText(board[1][1]);
+      jButton11.setText(board[1][2]);
+      jButton17.setText(board[2][0]);
+      jButton18.setText(board[2][1]);
+      jButton19.setText(board[2][2]);
     }
     if (messageName.equals("gameOver")) {
         jLabel1.setText("Game Over");
@@ -83,8 +83,63 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        newGameButton = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jButton33 = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
+        jButton35 = new javax.swing.JButton();
+        jButton36 = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
+        jButton38 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        jButton40 = new javax.swing.JButton();
+        jButton41 = new javax.swing.JButton();
+        jButton42 = new javax.swing.JButton();
+        jButton43 = new javax.swing.JButton();
+        jButton44 = new javax.swing.JButton();
+        jButton45 = new javax.swing.JButton();
+        jButton46 = new javax.swing.JButton();
+        jButton47 = new javax.swing.JButton();
+        jButton48 = new javax.swing.JButton();
+        jButton49 = new javax.swing.JButton();
+        jButton50 = new javax.swing.JButton();
+        jButton51 = new javax.swing.JButton();
+        jButton52 = new javax.swing.JButton();
+        jButton53 = new javax.swing.JButton();
+        jButton54 = new javax.swing.JButton();
+        jButton55 = new javax.swing.JButton();
+        jButton56 = new javax.swing.JButton();
+        jButton57 = new javax.swing.JButton();
+        jButton58 = new javax.swing.JButton();
+        jButton59 = new javax.swing.JButton();
+        jButton60 = new javax.swing.JButton();
+        jButton61 = new javax.swing.JButton();
+        jButton62 = new javax.swing.JButton();
+        jButton63 = new javax.swing.JButton();
+        jButton64 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,8 +164,8 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton3.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton3.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton3.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton3.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton3.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton3.setName("02"); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,71 +174,622 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton4.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton4.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton4.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton4.setName("12"); // NOI18N
+        jButton4.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton4.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton4.setName("02"); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onClick(evt);
+                jButton4onClick(evt);
             }
         });
 
         jButton5.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton5.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton5.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton5.setName("11"); // NOI18N
+        jButton5.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton5.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton5.setName("02"); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onClick(evt);
+                jButton5onClick(evt);
             }
         });
 
         jButton6.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton6.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton6.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton6.setName("10"); // NOI18N
+        jButton6.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton6.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton6.setName("02"); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onClick(evt);
+                jButton6onClick(evt);
             }
         });
 
         jButton7.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton7.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton7.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton7.setName("20"); // NOI18N
+        jButton7.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton7.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton7.setName("02"); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onClick(evt);
+                jButton7onClick(evt);
             }
         });
 
         jButton8.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-        jButton8.setMaximumSize(new java.awt.Dimension(83, 83));
-        jButton8.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton8.setName("21"); // NOI18N
+        jButton8.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton8.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton8.setName("02"); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                onClick(evt);
+                jButton8onClick(evt);
             }
         });
 
         jButton9.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton9.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton9.setMinimumSize(new java.awt.Dimension(83, 83));
-        jButton9.setName("22"); // NOI18N
+        jButton9.setName("10"); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 onClick(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
-
-        jButton10.setText("New Game");
+        jButton10.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton10.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton10.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton10.setName("11"); // NOI18N
+        jButton10.setPreferredSize(new java.awt.Dimension(46, 46));
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                onClick(evt);
+            }
+        });
+
+        jButton11.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton11.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton11.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton11.setName("12"); // NOI18N
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton12.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton12.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton12.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton12.setName("12"); // NOI18N
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12onClick(evt);
+            }
+        });
+
+        jButton13.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton13.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton13.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton13.setName("12"); // NOI18N
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13onClick(evt);
+            }
+        });
+
+        jButton14.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton14.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton14.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton14.setName("12"); // NOI18N
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14onClick(evt);
+            }
+        });
+
+        jButton15.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton15.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton15.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton15.setName("12"); // NOI18N
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15onClick(evt);
+            }
+        });
+
+        jButton16.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton16.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton16.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton16.setName("12"); // NOI18N
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16onClick(evt);
+            }
+        });
+
+        jButton17.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton17.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton17.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton17.setName("20"); // NOI18N
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton18.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton18.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton18.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton18.setName("21"); // NOI18N
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton19.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton19.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton19.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton19.setName("22"); // NOI18N
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton20.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton20.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton20.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton20.setName("12"); // NOI18N
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20onClick(evt);
+            }
+        });
+
+        jButton21.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton21.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton21.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton21.setName("12"); // NOI18N
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21onClick(evt);
+            }
+        });
+
+        jButton22.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton22.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton22.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton22.setName("12"); // NOI18N
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22onClick(evt);
+            }
+        });
+
+        jButton23.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton23.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton23.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton23.setName("12"); // NOI18N
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23onClick(evt);
+            }
+        });
+
+        jButton24.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton24.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton24.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton24.setName("12"); // NOI18N
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24onClick(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+
+        newGameButton.setText("New Game");
+        newGameButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newGameButtonActionPerformed(evt);
+            }
+        });
+
+        jButton25.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton25.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton25.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton25.setName("20"); // NOI18N
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton26.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton26.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton26.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton26.setName("21"); // NOI18N
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton27.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton27.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton27.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton27.setName("22"); // NOI18N
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton28.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton28.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton28.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton28.setName("12"); // NOI18N
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton29.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton29.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton29.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton29.setName("12"); // NOI18N
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton30.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton30.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton30.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton30.setName("12"); // NOI18N
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton31.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton31.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton31.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton31.setName("12"); // NOI18N
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton32.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton32.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton32.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton32.setName("12"); // NOI18N
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton33.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton33.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton33.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton33.setName("20"); // NOI18N
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton34.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton34.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton34.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton34.setName("21"); // NOI18N
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton35.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton35.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton35.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton35.setName("22"); // NOI18N
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton36.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton36.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton36.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton36.setName("12"); // NOI18N
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton37.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton37.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton37.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton37.setName("12"); // NOI18N
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37onClick(evt);
+            }
+        });
+
+        jButton38.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton38.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton38.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton38.setName("12"); // NOI18N
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38onClick(evt);
+            }
+        });
+
+        jButton39.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton39.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton39.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton39.setName("12"); // NOI18N
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39onClick(evt);
+            }
+        });
+
+        jButton40.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton40.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton40.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton40.setName("12"); // NOI18N
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40onClick(evt);
+            }
+        });
+
+        jButton41.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton41.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton41.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton41.setName("20"); // NOI18N
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41onClick(evt);
+            }
+        });
+
+        jButton42.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton42.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton42.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton42.setName("21"); // NOI18N
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42onClick(evt);
+            }
+        });
+
+        jButton43.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton43.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton43.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton43.setName("22"); // NOI18N
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43onClick(evt);
+            }
+        });
+
+        jButton44.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton44.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton44.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton44.setName("12"); // NOI18N
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44onClick(evt);
+            }
+        });
+
+        jButton45.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton45.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton45.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton45.setName("12"); // NOI18N
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45onClick(evt);
+            }
+        });
+
+        jButton46.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton46.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton46.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton46.setName("12"); // NOI18N
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46onClick(evt);
+            }
+        });
+
+        jButton47.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton47.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton47.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton47.setName("12"); // NOI18N
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47onClick(evt);
+            }
+        });
+
+        jButton48.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton48.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton48.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton48.setName("12"); // NOI18N
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48onClick(evt);
+            }
+        });
+
+        jButton49.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton49.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton49.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton49.setName("20"); // NOI18N
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49onClick(evt);
+            }
+        });
+
+        jButton50.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton50.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton50.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton50.setName("21"); // NOI18N
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50onClick(evt);
+            }
+        });
+
+        jButton51.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton51.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton51.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton51.setName("22"); // NOI18N
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51onClick(evt);
+            }
+        });
+
+        jButton52.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton52.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton52.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton52.setName("12"); // NOI18N
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52onClick(evt);
+            }
+        });
+
+        jButton53.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton53.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton53.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton53.setName("12"); // NOI18N
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53onClick(evt);
+            }
+        });
+
+        jButton54.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton54.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton54.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton54.setName("12"); // NOI18N
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54onClick(evt);
+            }
+        });
+
+        jButton55.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton55.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton55.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton55.setName("12"); // NOI18N
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55onClick(evt);
+            }
+        });
+
+        jButton56.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton56.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton56.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton56.setName("12"); // NOI18N
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56onClick(evt);
+            }
+        });
+
+        jButton57.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton57.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton57.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton57.setName("20"); // NOI18N
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onClick(evt);
+            }
+        });
+
+        jButton58.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton58.setMaximumSize(new java.awt.Dimension(83, 83));
+        jButton58.setMinimumSize(new java.awt.Dimension(83, 83));
+        jButton58.setName("21"); // NOI18N
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58onClick(evt);
+            }
+        });
+
+        jButton59.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton59.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton59.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton59.setName("22"); // NOI18N
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59onClick(evt);
+            }
+        });
+
+        jButton60.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton60.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton60.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton60.setName("12"); // NOI18N
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60onClick(evt);
+            }
+        });
+
+        jButton61.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton61.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton61.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton61.setName("12"); // NOI18N
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61onClick(evt);
+            }
+        });
+
+        jButton62.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton62.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton62.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton62.setName("12"); // NOI18N
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62onClick(evt);
+            }
+        });
+
+        jButton63.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton63.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton63.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton63.setName("12"); // NOI18N
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63onClick(evt);
+            }
+        });
+
+        jButton64.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton64.setMaximumSize(new java.awt.Dimension(46, 46));
+        jButton64.setMinimumSize(new java.awt.Dimension(46, 46));
+        jButton64.setName("12"); // NOI18N
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64onClick(evt);
             }
         });
 
@@ -194,26 +800,148 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(410, 410, 410)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(newGameButton)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addComponent(jButton10))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jButton21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton62, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -221,23 +949,89 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jButton10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jButton18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(jButton19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton54, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton55, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton56, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton57, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton60, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(newGameButton)
                 .addContainerGap())
         );
 
@@ -249,10 +1043,178 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         this.mvcMessaging.notify("playerMove", button.getName());
     }//GEN-LAST:event_onClick
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void newGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGameButtonActionPerformed
         jLabel1.setText("");
         this.mvcMessaging.notify("newGame");
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_newGameButtonActionPerformed
+
+    private void jButton4onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4onClick
+
+    private void jButton5onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5onClick
+
+    private void jButton6onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6onClick
+
+    private void jButton7onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7onClick
+
+    private void jButton8onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8onClick
+
+    private void jButton12onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12onClick
+
+    private void jButton20onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton20onClick
+
+    private void jButton13onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13onClick
+
+    private void jButton21onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton21onClick
+
+    private void jButton14onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14onClick
+
+    private void jButton22onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton22onClick
+
+    private void jButton15onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15onClick
+
+    private void jButton16onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16onClick
+
+    private void jButton23onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton23onClick
+
+    private void jButton24onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton24onClick
+
+    private void jButton37onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton37onClick
+
+    private void jButton38onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton38onClick
+
+    private void jButton39onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton39onClick
+
+    private void jButton40onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton40onClick
+
+    private void jButton41onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton41onClick
+
+    private void jButton42onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton42onClick
+
+    private void jButton43onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton43onClick
+
+    private void jButton44onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton44onClick
+
+    private void jButton45onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton45onClick
+
+    private void jButton46onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton46onClick
+
+    private void jButton47onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton47onClick
+
+    private void jButton48onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton48onClick
+
+    private void jButton49onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton49onClick
+
+    private void jButton50onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton50onClick
+
+    private void jButton51onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton51onClick
+
+    private void jButton52onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton52onClick
+
+    private void jButton53onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton53onClick
+
+    private void jButton54onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton54onClick
+
+    private void jButton55onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton55onClick
+
+    private void jButton56onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton56onClick
+
+    private void jButton58onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton58onClick
+
+    private void jButton59onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton59onClick
+
+    private void jButton60onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton60onClick
+
+    private void jButton61onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton61onClick
+
+    private void jButton62onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton62onClick
+
+    private void jButton63onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton63onClick
+
+    private void jButton64onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64onClick
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton64onClick
 
   /**
    * @param args the command line arguments
@@ -261,14 +1223,69 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton40;
+    private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
+    private javax.swing.JButton jButton45;
+    private javax.swing.JButton jButton46;
+    private javax.swing.JButton jButton47;
+    private javax.swing.JButton jButton48;
+    private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton50;
+    private javax.swing.JButton jButton51;
+    private javax.swing.JButton jButton52;
+    private javax.swing.JButton jButton53;
+    private javax.swing.JButton jButton54;
+    private javax.swing.JButton jButton55;
+    private javax.swing.JButton jButton56;
+    private javax.swing.JButton jButton57;
+    private javax.swing.JButton jButton58;
+    private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton60;
+    private javax.swing.JButton jButton61;
+    private javax.swing.JButton jButton62;
+    private javax.swing.JButton jButton63;
+    private javax.swing.JButton jButton64;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton newGameButton;
     // End of variables declaration//GEN-END:variables
 }
