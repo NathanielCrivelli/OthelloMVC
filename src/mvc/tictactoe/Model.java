@@ -32,7 +32,7 @@ public class Model implements MessageHandler {
      * Initialize the model here and subscribe to any required messages
      */
     public void init() {
-        this.board = new String[3][3];
+        this.board = new String[8][8];
         this.newGame();
         this.mvcMessaging.subscribe("playerMove", this);
         this.mvcMessaging.subscribe("newGame", this);
@@ -83,13 +83,13 @@ public class Model implements MessageHandler {
                 this.mvcMessaging.notify("boardChange", this.board);
                 this.whoseMove = !this.whoseMove;
             }
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 8; i++) {
                 if (board[i][0].equals(board[i][1]) && board[i][0].equals(board[i][2]) && !board[i][0].equals("")) {
                     this.mvcMessaging.notify("gameOver");
                     gameOver = true;
                 }
             }
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 8; i++) {
                 if (board[0][i].equals(board[1][i]) && board[0][i].equals(board[2][i]) && !board[0][i].equals("")) {
                     this.mvcMessaging.notify("gameOver");
                     gameOver = true;
