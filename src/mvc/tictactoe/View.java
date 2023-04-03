@@ -37,6 +37,70 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         this.mvcMessaging.subscribe("Tie", this);
         
         this.jBList[0] = jButton1;
+        this.jBList[0] = jButton2;
+        this.jBList[0] = jButton3;
+        this.jBList[0] = jButton4;
+        this.jBList[0] = jButton5;
+        this.jBList[0] = jButton6;
+        this.jBList[0] = jButton7;
+        this.jBList[0] = jButton8;
+        this.jBList[0] = jButton9;
+        this.jBList[0] = jButton10;
+        this.jBList[0] = jButton11;
+        this.jBList[0] = jButton12;
+        this.jBList[0] = jButton13;
+        this.jBList[0] = jButton14;
+        this.jBList[0] = jButton15;
+        this.jBList[0] = jButton16;
+        this.jBList[0] = jButton17;
+        this.jBList[0] = jButton18;
+        this.jBList[0] = jButton19;
+        this.jBList[0] = jButton20;
+        this.jBList[0] = jButton21;
+        this.jBList[0] = jButton22;
+        this.jBList[0] = jButton23;
+        this.jBList[0] = jButton24;
+        this.jBList[0] = jButton25;
+        this.jBList[0] = jButton26;
+        this.jBList[0] = jButton27;
+        this.jBList[0] = jButton28;
+        this.jBList[0] = jButton29;
+        this.jBList[0] = jButton30;
+        this.jBList[0] = jButton31;
+        this.jBList[0] = jButton32;
+        this.jBList[0] = jButton33;
+        this.jBList[0] = jButton34;
+        this.jBList[0] = jButton35;
+        this.jBList[0] = jButton36;
+        this.jBList[0] = jButton37;
+        this.jBList[0] = jButton38;
+        this.jBList[0] = jButton39;
+        this.jBList[0] = jButton40;
+        this.jBList[0] = jButton41;
+        this.jBList[0] = jButton42;
+        this.jBList[0] = jButton43;
+        this.jBList[0] = jButton44;
+        this.jBList[0] = jButton45;
+        this.jBList[0] = jButton46;
+        this.jBList[0] = jButton46;
+        this.jBList[0] = jButton47;
+        this.jBList[0] = jButton48;
+        this.jBList[0] = jButton49;
+        this.jBList[0] = jButton50;
+        this.jBList[0] = jButton51;
+        this.jBList[0] = jButton52;
+        this.jBList[0] = jButton53;
+        this.jBList[0] = jButton54;
+        this.jBList[0] = jButton55;
+        this.jBList[0] = jButton56;
+        this.jBList[0] = jButton57;
+        this.jBList[0] = jButton58;
+        this.jBList[0] = jButton59;
+        this.jBList[0] = jButton60;
+        this.jBList[0] = jButton61;
+        this.jBList[0] = jButton62;
+        this.jBList[0] = jButton63;
+        this.jBList[0] = jButton64;
     }
 
     @Override
@@ -141,7 +205,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton1.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton1.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton1.setName("00"); // NOI18N
@@ -151,7 +215,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton2.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton2.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton2.setName("01"); // NOI18N
@@ -161,7 +225,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton3.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton3.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton3.setName("02"); // NOI18N
@@ -171,7 +235,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton4.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton4.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton4.setName("03"); // NOI18N
@@ -181,7 +245,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton5.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton5.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton5.setName("04"); // NOI18N
@@ -191,7 +255,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton6.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton6.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton6.setName("05"); // NOI18N
@@ -201,7 +265,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton7.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton7.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton7.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton7.setName("06"); // NOI18N
@@ -211,7 +275,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton8.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton8.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton8.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton8.setName("07"); // NOI18N
@@ -221,7 +285,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton9.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton9.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton9.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton9.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton9.setName("10"); // NOI18N
@@ -231,7 +295,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton10.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton10.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton10.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton10.setName("11"); // NOI18N
@@ -242,7 +306,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton11.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton11.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton11.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton11.setName("12"); // NOI18N
@@ -252,7 +316,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton12.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton12.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton12.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton12.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton12.setName("13"); // NOI18N
@@ -262,7 +326,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton13.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton13.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton13.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton13.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton13.setName("14"); // NOI18N
@@ -272,7 +336,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton14.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton14.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton14.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton14.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton14.setName("15"); // NOI18N
@@ -282,7 +346,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton15.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton15.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton15.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton15.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton15.setName("16"); // NOI18N
@@ -292,7 +356,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton16.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton16.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton16.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton16.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton16.setName("17"); // NOI18N
@@ -302,7 +366,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton17.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton17.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton17.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton17.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton17.setName("20"); // NOI18N
@@ -312,7 +376,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton18.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton18.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton18.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton18.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton18.setName("21"); // NOI18N
@@ -322,7 +386,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton19.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton19.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton19.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton19.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton19.setName("22"); // NOI18N
@@ -332,7 +396,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton20.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton20.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton20.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton20.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton20.setName("23"); // NOI18N
@@ -342,7 +406,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton21.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton21.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton21.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton21.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton21.setName("24"); // NOI18N
@@ -352,7 +416,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton22.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton22.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton22.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton22.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton22.setName("25"); // NOI18N
@@ -362,7 +426,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton23.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton23.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton23.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton23.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton23.setName("26"); // NOI18N
@@ -372,7 +436,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton24.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton24.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton24.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton24.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton24.setName("27"); // NOI18N
@@ -391,7 +455,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton25.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton25.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton25.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton25.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton25.setName("30"); // NOI18N
@@ -401,7 +465,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton26.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton26.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton26.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton26.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton26.setName("31"); // NOI18N
@@ -411,7 +475,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton27.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton27.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton27.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton27.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton27.setName("32"); // NOI18N
@@ -421,7 +485,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton28.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton28.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton28.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton28.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton28.setName("33"); // NOI18N
@@ -431,7 +495,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton29.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton29.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton29.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton29.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton29.setName("34"); // NOI18N
@@ -441,7 +505,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton30.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton30.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton30.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton30.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton30.setName("35"); // NOI18N
@@ -451,7 +515,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton31.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton31.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton31.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton31.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton31.setName("36"); // NOI18N
@@ -461,7 +525,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton32.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton32.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton32.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton32.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton32.setName("37"); // NOI18N
@@ -471,7 +535,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton33.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton33.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton33.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton33.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton33.setName("40"); // NOI18N
@@ -481,7 +545,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton34.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton34.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton34.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton34.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton34.setName("41"); // NOI18N
@@ -491,7 +555,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton35.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton35.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton35.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton35.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton35.setName("42"); // NOI18N
@@ -501,7 +565,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton36.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton36.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton36.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton36.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton36.setName("43"); // NOI18N
@@ -511,7 +575,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton37.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton37.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton37.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton37.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton37.setName("44"); // NOI18N
@@ -521,7 +585,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton38.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton38.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton38.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton38.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton38.setName("45"); // NOI18N
@@ -531,7 +595,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton39.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton39.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton39.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton39.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton39.setName("46"); // NOI18N
@@ -541,7 +605,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton40.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton40.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton40.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton40.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton40.setName("47"); // NOI18N
@@ -551,7 +615,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton41.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton41.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton41.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton41.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton41.setName("50"); // NOI18N
@@ -561,7 +625,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton42.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton42.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton42.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton42.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton42.setName("51"); // NOI18N
@@ -571,7 +635,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton43.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton43.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton43.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton43.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton43.setName("52"); // NOI18N
@@ -581,7 +645,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton44.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton44.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton44.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton44.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton44.setName("53"); // NOI18N
@@ -591,7 +655,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton45.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton45.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton45.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton45.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton45.setName("54"); // NOI18N
@@ -601,7 +665,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton46.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton46.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton46.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton46.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton46.setName("55"); // NOI18N
@@ -611,7 +675,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton47.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton47.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton47.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton47.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton47.setName("56"); // NOI18N
@@ -621,7 +685,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton48.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton48.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton48.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton48.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton48.setName("57"); // NOI18N
@@ -631,7 +695,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton49.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton49.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton49.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton49.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton49.setName("60"); // NOI18N
@@ -641,7 +705,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton50.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton50.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton50.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton50.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton50.setName("61"); // NOI18N
@@ -651,7 +715,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton51.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton51.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton51.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton51.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton51.setName("62"); // NOI18N
@@ -661,7 +725,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton52.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton52.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton52.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton52.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton52.setName("63"); // NOI18N
@@ -671,7 +735,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton53.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton53.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton53.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton53.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton53.setName("64"); // NOI18N
@@ -681,7 +745,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton54.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton54.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton54.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton54.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton54.setName("65"); // NOI18N
@@ -691,7 +755,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton55.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton55.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton55.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton55.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton55.setName("66"); // NOI18N
@@ -701,7 +765,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton56.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton56.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton56.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton56.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton56.setName("67"); // NOI18N
@@ -711,7 +775,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton57.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton57.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton57.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton57.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton57.setName("70"); // NOI18N
@@ -721,7 +785,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton58.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton58.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton58.setMaximumSize(new java.awt.Dimension(83, 83));
         jButton58.setMinimumSize(new java.awt.Dimension(83, 83));
         jButton58.setName("71"); // NOI18N
@@ -731,7 +795,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton59.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton59.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton59.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton59.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton59.setName("72"); // NOI18N
@@ -741,7 +805,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton60.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton60.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton60.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton60.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton60.setName("73"); // NOI18N
@@ -751,7 +815,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton61.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton61.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton61.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton61.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton61.setName("74"); // NOI18N
@@ -761,7 +825,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton62.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton62.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton62.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton62.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton62.setName("75"); // NOI18N
@@ -771,7 +835,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton63.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton63.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton63.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton63.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton63.setName("76"); // NOI18N
@@ -781,7 +845,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             }
         });
 
-        jButton64.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
+        jButton64.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         jButton64.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton64.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton64.setName("77"); // NOI18N
