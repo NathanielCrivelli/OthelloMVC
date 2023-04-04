@@ -54,6 +54,10 @@ public class Model implements MessageHandler {
         this.gameOver = false;
     }
 
+    public void getLegalMoves() {
+           
+    }
+
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
         // Display the message to the console for debugging

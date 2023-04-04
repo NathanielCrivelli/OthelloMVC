@@ -15,7 +15,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
 
     private final Messenger mvcMessaging;
     private String winner;
-    private JButton[] jBList = new JButton [64];
+    private final JButton[] jBList = new JButton [64];
 
     /**
      * Creates a new view
@@ -37,70 +37,69 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         this.mvcMessaging.subscribe("Tie", this);
         
         this.jBList[0] = jButton1;
-        this.jBList[0] = jButton2;
-        this.jBList[0] = jButton3;
-        this.jBList[0] = jButton4;
-        this.jBList[0] = jButton5;
-        this.jBList[0] = jButton6;
-        this.jBList[0] = jButton7;
-        this.jBList[0] = jButton8;
-        this.jBList[0] = jButton9;
-        this.jBList[0] = jButton10;
-        this.jBList[0] = jButton11;
-        this.jBList[0] = jButton12;
-        this.jBList[0] = jButton13;
-        this.jBList[0] = jButton14;
-        this.jBList[0] = jButton15;
-        this.jBList[0] = jButton16;
-        this.jBList[0] = jButton17;
-        this.jBList[0] = jButton18;
-        this.jBList[0] = jButton19;
-        this.jBList[0] = jButton20;
-        this.jBList[0] = jButton21;
-        this.jBList[0] = jButton22;
-        this.jBList[0] = jButton23;
-        this.jBList[0] = jButton24;
-        this.jBList[0] = jButton25;
-        this.jBList[0] = jButton26;
-        this.jBList[0] = jButton27;
-        this.jBList[0] = jButton28;
-        this.jBList[0] = jButton29;
-        this.jBList[0] = jButton30;
-        this.jBList[0] = jButton31;
-        this.jBList[0] = jButton32;
-        this.jBList[0] = jButton33;
-        this.jBList[0] = jButton34;
-        this.jBList[0] = jButton35;
-        this.jBList[0] = jButton36;
-        this.jBList[0] = jButton37;
-        this.jBList[0] = jButton38;
-        this.jBList[0] = jButton39;
-        this.jBList[0] = jButton40;
-        this.jBList[0] = jButton41;
-        this.jBList[0] = jButton42;
-        this.jBList[0] = jButton43;
-        this.jBList[0] = jButton44;
-        this.jBList[0] = jButton45;
-        this.jBList[0] = jButton46;
-        this.jBList[0] = jButton46;
-        this.jBList[0] = jButton47;
-        this.jBList[0] = jButton48;
-        this.jBList[0] = jButton49;
-        this.jBList[0] = jButton50;
-        this.jBList[0] = jButton51;
-        this.jBList[0] = jButton52;
-        this.jBList[0] = jButton53;
-        this.jBList[0] = jButton54;
-        this.jBList[0] = jButton55;
-        this.jBList[0] = jButton56;
-        this.jBList[0] = jButton57;
-        this.jBList[0] = jButton58;
-        this.jBList[0] = jButton59;
-        this.jBList[0] = jButton60;
-        this.jBList[0] = jButton61;
-        this.jBList[0] = jButton62;
-        this.jBList[0] = jButton63;
-        this.jBList[0] = jButton64;
+        this.jBList[1] = jButton2;
+        this.jBList[2] = jButton3;
+        this.jBList[3] = jButton4;
+        this.jBList[4] = jButton5;
+        this.jBList[5] = jButton6;
+        this.jBList[6] = jButton7;
+        this.jBList[7] = jButton8;
+        this.jBList[8] = jButton9;
+        this.jBList[9] = jButton10;
+        this.jBList[10] = jButton11;
+        this.jBList[11] = jButton12;
+        this.jBList[12] = jButton13;
+        this.jBList[13] = jButton14;
+        this.jBList[14] = jButton15;
+        this.jBList[15] = jButton16;
+        this.jBList[16] = jButton17;
+        this.jBList[17] = jButton18;
+        this.jBList[18] = jButton19;
+        this.jBList[19] = jButton20;
+        this.jBList[20] = jButton21;
+        this.jBList[21] = jButton22;
+        this.jBList[22] = jButton23;
+        this.jBList[23] = jButton24;
+        this.jBList[24] = jButton25;
+        this.jBList[25] = jButton26;
+        this.jBList[26] = jButton27;
+        this.jBList[27] = jButton28;
+        this.jBList[28] = jButton29;
+        this.jBList[29] = jButton30;
+        this.jBList[30] = jButton31;
+        this.jBList[31] = jButton32;
+        this.jBList[32] = jButton33;
+        this.jBList[33] = jButton34;
+        this.jBList[34] = jButton35;
+        this.jBList[35] = jButton36;
+        this.jBList[36] = jButton37;
+        this.jBList[37] = jButton38;
+        this.jBList[38] = jButton39;
+        this.jBList[39] = jButton40;
+        this.jBList[40] = jButton41;
+        this.jBList[41] = jButton42;
+        this.jBList[42] = jButton43;
+        this.jBList[43] = jButton44;
+        this.jBList[44] = jButton45;
+        this.jBList[45] = jButton46;
+        this.jBList[46] = jButton47;
+        this.jBList[47] = jButton48;
+        this.jBList[48] = jButton49;
+        this.jBList[49] = jButton50;
+        this.jBList[50] = jButton51;
+        this.jBList[51] = jButton52;
+        this.jBList[52] = jButton53;
+        this.jBList[53] = jButton54;
+        this.jBList[54] = jButton55;
+        this.jBList[55] = jButton56;
+        this.jBList[56] = jButton57;
+        this.jBList[57] = jButton58;
+        this.jBList[58] = jButton59;
+        this.jBList[59] = jButton60;
+        this.jBList[60] = jButton61;
+        this.jBList[61] = jButton62;
+        this.jBList[62] = jButton63;
+        this.jBList[63] = jButton64;
     }
 
     @Override
@@ -115,9 +114,14 @@ public class View extends javax.swing.JFrame implements MessageHandler {
             // know that the model is sending out the board data with the message
             String[][] board = (String[][]) messagePayload;
             // Now set the button text with the contents of the board
-            for (int i = 0; i < 1; i++) {
-                jBList[i].setText(board[0][0]);
-            }
+            int count = 0;
+            for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 8; j++) {
+                    jBList[count].setText(board[i][j]);
+                    count++;
+                }
+            }    
+                
         }
         if (messageName.equals("gameOver")) {
             jLabel1.setText("Game Over");
