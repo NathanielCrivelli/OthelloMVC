@@ -490,6 +490,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton28.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        jButton28.setText("O");
         jButton28.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton28.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton28.setName("33"); // NOI18N
@@ -500,6 +501,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton29.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        jButton29.setText("X");
         jButton29.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton29.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton29.setName("34"); // NOI18N
@@ -570,6 +572,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton36.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        jButton36.setText("X");
         jButton36.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton36.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton36.setName("43"); // NOI18N
@@ -580,6 +583,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         });
 
         jButton37.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        jButton37.setText("O");
         jButton37.setMaximumSize(new java.awt.Dimension(46, 46));
         jButton37.setMinimumSize(new java.awt.Dimension(46, 46));
         jButton37.setName("44"); // NOI18N
@@ -867,7 +871,7 @@ public class View extends javax.swing.JFrame implements MessageHandler {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(410, 410, 410)
+                        .addGap(202, 202, 202)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(newGameButton)

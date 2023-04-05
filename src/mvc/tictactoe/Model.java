@@ -33,6 +33,10 @@ public class Model implements MessageHandler {
      */
     public void init() {
         this.board = new String[8][8];
+        this.board[3][3] = "O";
+        this.board[3][4] = "X";
+        this.board[4][3] = "X";
+        this.board[4][4] = "O";
         this.newGame();
         this.mvcMessaging.subscribe("playerMove", this);
         this.mvcMessaging.subscribe("newGame", this);
@@ -50,13 +54,53 @@ public class Model implements MessageHandler {
                 this.board[row][col] = "";
             }
         }
+        this.board[3][3] = "O";
+        this.board[3][4] = "X";
+        this.board[4][3] = "X";
+        this.board[4][4] = "O";
+
         this.whoseMove = false;
         this.gameOver = false;
     }
 
-    public void getLegalMoves() {
-           
+    public void setLegalMoves() {
+        
     }
+    
+    /*
+    directions:
+    0 = Up
+    1 = Up + Right
+    2 = Right
+    3 = Right + Down
+    4 = Down
+    5 = Down + Left
+    6 = Left
+    7 = Left + Up
+    
+    String pos = coord on board
+    
+    count = number of steps done
+    */
+ private boolean step(int direction, int count) {
+     if (direction == 0) {
+         
+     } else if (direction == 1) {
+         
+     } else if (direction == 2) {
+         
+     } else if (direction == 3) {
+         
+     } else if (direction == 4) {
+         
+     } else if (direction == 5) {
+         
+     } else if (direction == 6) {
+         
+     } else if (direction == 7) {
+         
+     }
+  }
 
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
