@@ -82,24 +82,57 @@ public class Model implements MessageHandler {
     
     count = number of steps done
     */
- private boolean step(int direction, int count) {
+ private boolean stepX(int direction, int count, int row, int col) {
      if (direction == 0) {
-         
+         for(int i = row; i < this.board.length; i++) {
+             if (board[i][col].equals("")) {
+                 return this.stepX(direction, count++, row, col);
+             } else if (board[i][col].equals("O")) {
+                 return this.stepX(direction, count, row++, col);
+             } else if (board[i][col].equals("X")) {
+                 return true;
+             }
+         }
      } else if (direction == 1) {
          
      } else if (direction == 2) {
-         
+         for(int i = col; i < this.board.length; i++) {
+             if (board[i][col].equals("")) {
+                 return this.stepX(direction, count++, row, col);
+             } else if (board[i][col].equals("O")) {
+                 return this.stepX(direction, count, row, col++);
+             } else if (board[i][col].equals("X")) {
+                 return true;
+             }
+         }
      } else if (direction == 3) {
          
      } else if (direction == 4) {
-         
+         for(int i = row; i < this.board.length; i--) {
+             if (board[i][col].equals("")) {
+                 return this.stepX(direction, count++, row, col);
+             } else if (board[i][col].equals("O")) {
+                 return this.stepX(direction, count, row--, col);
+             } else if (board[i][col].equals("X")) {
+                 return true;
+             }
+         }
      } else if (direction == 5) {
          
      } else if (direction == 6) {
-         
+         for(int i = col; i < this.board.length; i--) {
+             if (board[row][i].equals("")) {
+                 return this.stepX(direction, count++, row, col);
+             } else if (board[row][i].equals("O")) {
+                 return this.stepX(direction, count, row, col--);
+             } else if (board[i][col].equals("X")) {
+                 return true;
+             }
+         }
      } else if (direction == 7) {
          
      }
+     return false;
   }
 
     @Override
