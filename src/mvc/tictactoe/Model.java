@@ -94,7 +94,14 @@ public class Model implements MessageHandler {
              }
          }
      } else if (direction == 1) {
-         
+         for (int k = 0; k <= 2 * (this.board.length - 1); ++k) {
+            int yMin = Math.max(0, k - this.board.length + 1);
+            int yMax = Math.min(this.board.length - 1, k);
+            for (int y = yMin; y <= yMax; ++y) {
+                int x = k - y;
+                
+    }
+}
      } else if (direction == 2) {
          for(int i = col; i < this.board.length; i++) {
              if (board[i][col].equals("")) {
