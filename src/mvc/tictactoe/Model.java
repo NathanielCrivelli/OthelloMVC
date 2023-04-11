@@ -64,9 +64,9 @@ public class Model implements MessageHandler {
     }
 
     public void setLegalMoves() {
-        
+
     }
-    
+
     /*
     directions:
     0 = Up
@@ -81,67 +81,94 @@ public class Model implements MessageHandler {
     String pos = coord on board
     
     count = number of steps done
-    */
- private boolean stepX(int direction, int count, int row, int col) {
-     if (direction == 0) {
-         for(int i = row; i < this.board.length; i++) {
-             if (board[i][col].equals("")) {
-                 return this.stepX(direction, count++, row, col);
-             } else if (board[i][col].equals("O")) {
-                 return this.stepX(direction, count, row++, col);
-             } else if (board[i][col].equals("X")) {
-                 return true;
-             }
-         }
-     } else if (direction == 1) {
-         for (int k = 0; k <= 2 * (this.board.length - 1); ++k) {
-            int yMin = Math.max(0, k - this.board.length + 1);
-            int yMax = Math.min(this.board.length - 1, k);
-            for (int y = yMin; y <= yMax; ++y) {
-                int x = k - y;
-                
-    }
-}
-     } else if (direction == 2) {
-         for(int i = col; i < this.board.length; i++) {
-             if (board[i][col].equals("")) {
-                 return this.stepX(direction, count++, row, col);
-             } else if (board[i][col].equals("O")) {
-                 return this.stepX(direction, count, row, col++);
-             } else if (board[i][col].equals("X")) {
-                 return true;
-             }
-         }
-     } else if (direction == 3) {
-         
-     } else if (direction == 4) {
-         for(int i = row; i < this.board.length; i--) {
-             if (board[i][col].equals("")) {
-                 return this.stepX(direction, count++, row, col);
-             } else if (board[i][col].equals("O")) {
-                 return this.stepX(direction, count, row--, col);
-             } else if (board[i][col].equals("X")) {
-                 return true;
-             }
-         }
-     } else if (direction == 5) {
-         
-     } else if (direction == 6) {
-         for(int i = col; i < this.board.length; i--) {
-             if (board[row][i].equals("")) {
-                 return this.stepX(direction, count++, row, col);
-             } else if (board[row][i].equals("O")) {
-                 return this.stepX(direction, count, row, col--);
-             } else if (board[i][col].equals("X")) {
-                 return true;
-             }
-         }
-     } else if (direction == 7) {
-         
-     }
-     return false;
-  }
+     */
+    private boolean stepX(int direction, int count, int row, int col) {
+        if (direction == 0) {
+            for (int i = row; i < this.board.length; i++) {
+                if (board[i][col].equals("")) {
+                    return this.stepX(direction, count++, row, col);
+                } else if (board[i][col].equals("O")) {
+                    return this.stepX(direction, count, row++, col);
+                } else if (board[i][col].equals("X")) {
+                    return true;
+                }
+            }
+        } else if (direction == 1) {
+            for (int k = 0; k <= 2 * (this.board.length - 1); ++k) {
+                int yMin = Math.max(0, k - this.board.length + 1);
+                int yMax = Math.min(this.board.length - 1, k);
+                for (int y = yMin; y <= yMax; ++y) {
+                    int x = k - y;
 
+                }
+            }
+        } else if (direction == 2) {
+            for (int i = col; i < this.board.length; i++) {
+                if (board[i][col].equals("")) {
+                    return this.stepX(direction, count++, row, col);
+                } else if (board[i][col].equals("O")) {
+                    return this.stepX(direction, count, row, col++);
+                } else if (board[i][col].equals("X")) {
+                    return true;
+                }
+            }
+        } else if (direction == 3) {
+
+        } else if (direction == 4) {
+            for (int i = row; i < this.board.length; i--) {
+                if (board[i][col].equals("")) {
+                    return this.stepX(direction, count++, row, col);
+                } else if (board[i][col].equals("O")) {
+                    return this.stepX(direction, count, row--, col);
+                } else if (board[i][col].equals("X")) {
+                    return true;
+                }
+            }
+        } else if (direction == 5) {
+
+        } else if (direction == 6) {
+            for (int i = col; i < this.board.length; i--) {
+                if (board[row][i].equals("")) {
+                    return this.stepX(direction, count++, row, col);
+                } else if (board[row][i].equals("O")) {
+                    return this.stepX(direction, count, row, col--);
+                } else if (board[i][col].equals("X")) {
+                    return true;
+                }
+            }
+        } else if (direction == 7) {
+
+        }
+        return false;
+    }
+
+    private boolean step(int[] position, Directions direction, int count) {
+        int[] newPos = vector(direction, position);
+        if (isOffBoard(position)) {
+            return false;
+        } else if (this.board[position[0],position[1]].equals()) {
+            return this.step(position, direction, count + 1);
+        } else if ((position).getSquare().equals()) {
+            return count > 0;
+        } else {
+            return false;
+        }
+    }
+
+    // pos is the position, just like in vector
+    public boolean isOffBoard(int[] pos) {
+        return (pos[0] < 0 || pos[0] >= this.board.length || pos[1] < 0 || pos[1] >= this.board.length);
+    }
+
+    // vector[] is directions, pos is current position
+    public void vector(int[] vector, int[] pos) {
+        pos[0] += vector[0];
+        pos[1] += vector[1];
+    }
+
+    public String getSquare(int[] pos) {
+       return this.board[pos[0]][pos[1]];
+    }
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
         // Display the message to the console for debugging

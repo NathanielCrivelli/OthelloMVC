@@ -9,5 +9,5 @@ package mvc.tictactoe;
  * @author student
  */
 public class Directions {
-    
+    public static int[][] points = {{-1,0},{-1,-1},{-1,1},{0,1},{0,-1},{1,0},{1,1},{1,-1}};
 }
