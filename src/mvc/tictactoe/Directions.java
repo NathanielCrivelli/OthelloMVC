@@ -10,4 +10,12 @@ package mvc.tictactoe;
  */
 public class Directions {
     public static int[][] points = {{-1,0},{-1,-1},{-1,1},{0,1},{0,-1},{1,0},{1,1},{1,-1}};
+
+    public static int[] getVector(int vector) {
+        return points[vector];
+    }
+
+    public static int[][] getVectorList() {
+        return points;
+    }
 }

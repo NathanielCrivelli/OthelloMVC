@@ -64,25 +64,26 @@ public class Model implements MessageHandler {
     }
 
     public void setLegalMoves() {
-
+        for(int i = 0; i < this.board.length; i++) {
+            for(int j = 0; j < this.board[].length; j++) {
+                int[] position = {i, j};
+                if (isLegalMove(position)) {
+                    this.board[i][j] = "M";
+                }
+            }
+        }
     }
 
-    /*
-    directions:
-    0 = Up
-    1 = Up + Right
-    2 = Right
-    3 = Right + Down
-    4 = Down
-    5 = Down + Left
-    6 = Left
-    7 = Left + Up
-    
-    String pos = coord on board
-    
-    count = number of steps done
-     */
- 
+    public boolean isLegalMove(int[] pos) {
+        for (int direction = 0; direction < Directions.getVectorList().length; direction++) {
+            int[] directionVector = Directions.getVector(direction);
+            if (step(pos, directionVector, 0, whoseMove)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private boolean step(int[] position, Directions direction, int count, boolean whoseMove) {
         int[] newPos = vector(direction, position);
         if (isOffBoard(position)) {
@@ -108,8 +109,9 @@ public class Model implements MessageHandler {
     }
 
     public String getSquare(int[] pos) {
-       return this.board[pos[0]][pos[1]];
+        return this.board[pos[0]][pos[1]];
     }
+
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
         // Display the message to the console for debugging
@@ -136,6 +138,7 @@ public class Model implements MessageHandler {
                     this.board[row][col] = "O";
                 }
                 // Send the boardChange message along with the new board 
+                setLegalMoves();
                 this.mvcMessaging.notify("boardChange", this.board);
                 this.whoseMove = !this.whoseMove;
             }
