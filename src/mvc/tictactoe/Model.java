@@ -65,7 +65,7 @@ public class Model implements MessageHandler {
 
     public void setLegalMoves() {
         for(int i = 0; i < this.board.length; i++) {
-            for(int j = 0; j < this.board[].length; j++) {
+            for(int j = 0; j < this.board[0].length; j++) {
                 int[] position = {i, j};
                 if (isLegalMove(position)) {
                     this.board[i][j] = "M";
@@ -75,17 +75,16 @@ public class Model implements MessageHandler {
     }
 
     public boolean isLegalMove(int[] pos) {
-        for (int direction = 0; direction < Directions.getVectorList().length; direction++) {
-            int[] directionVector = Directions.getVector(direction);
-            if (step(pos, directionVector, 0, whoseMove)) {
+        for (int[] direction : Directions.points) {
+            if (step(pos, direction, 0, whoseMove)) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean step(int[] position, Directions direction, int count, boolean whoseMove) {
-        int[] newPos = vector(direction, position);
+    private boolean step(int[] position, int[] direction, int count, boolean whoseMove) {
+        vector(direction, position);
         if (isOffBoard(position)) {
             return false;
         } else if (this.board[position[0]][position[1]].equals(!whoseMove)) {
@@ -99,7 +98,7 @@ public class Model implements MessageHandler {
 
     // pos is the position, just like in vector
     public boolean isOffBoard(int[] pos) {
-        return (pos[0] < 0 || pos[0] >= this.board.length || pos[1] < 0 || pos[1] >= this.board.length);
+        return true;
     }
 
     // vector[] is directions, pos is current position
