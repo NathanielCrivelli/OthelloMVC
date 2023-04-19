@@ -1,5 +1,9 @@
 package mvc.tictactoe;
 
+import java.lang.reflect.Array;
+import java.text.BreakIterator;
+import java.util.ArrayList;
+
 import com.mrjaffesclass.apcs.messenger.*;
 
 /**
@@ -63,24 +67,26 @@ public class Model implements MessageHandler {
         this.gameOver = false;
     }
 
-    public void setLegalMoves() {
-        for(int i = 0; i < this.board.length; i++) {
-            for(int j = 0; j < this.board[0].length; j++) {
-                int[] position = {i, j};
-                if (isLegalMove(position)) {
-                    this.board[i][j] = "M";
-                }
-            }
-        }
-    }
-
     public boolean isLegalMove(int[] pos) {
-        for (int[] direction : Directions.points) {
+        for(int[] direction : Directions.points) {
             if (step(pos, direction, 0, whoseMove)) {
                 return true;
             }
         }
         return false;
+    }
+    
+    public ArrayList<int[]> setLegalMoves() {
+        ArrayList<int[]> moves = new ArrayList<int[]>();
+        for(int i = 0; i < this.board.length; i++) {
+            for(int j = 0; j < this.board[0].length; j++) {
+                int[] position = {i, j};
+                if (isLegalMove(position)) {
+                    moves.add(position);
+                }
+            }
+        }
+        return moves;
     }
 
     private boolean step(int[] position, int[] direction, int count, boolean whoseMove) {
@@ -88,6 +94,7 @@ public class Model implements MessageHandler {
         if (isOffBoard(position)) {
             return false;
         } else if (this.board[position[0]][position[1]].equals(!whoseMove)) {
+            flip(position);
             return this.step(position, direction, count + 1, whoseMove);
         } else if (this.board[position[0]][position[1]].equals(whoseMove)) {
             return count > 0;
@@ -96,9 +103,16 @@ public class Model implements MessageHandler {
         }
     }
 
+    private void flip(int[] pos) {
+        if(this.board[pos[0]][pos[1]].equals("O")) {
+            this.board[pos[0]][pos[1]] = "X";
+        } else {
+            this.board[pos[0]][pos[1]] = "O";
+        }
+    }
     // pos is the position, just like in vector
     public boolean isOffBoard(int[] pos) {
-        return true;
+        return (pos[0] < 0 || pos[0] >= this.board.length || pos[1] < 0 || pos[1] >= this.board.length);
     }
 
     // vector[] is directions, pos is current position
@@ -108,9 +122,8 @@ public class Model implements MessageHandler {
     }
 
     public String getSquare(int[] pos) {
-        return this.board[pos[0]][pos[1]];
+       return this.board[pos[0]][pos[1]];
     }
-
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
         // Display the message to the console for debugging
@@ -129,6 +142,10 @@ public class Model implements MessageHandler {
             Integer row = new Integer(position.substring(0, 1));
             Integer col = new Integer(position.substring(1, 2));
             // If square is blank...
+
+            ArrayList<int[]> moves = new ArrayList<int[]>();
+            moves = setLegalMoves();
+            for(int i = 0; i < moves.length(); i++){
             if (this.board[row][col].equals("")) {
                 // ... then set X or O depending on whose move it is
                 if (this.whoseMove) {
@@ -136,8 +153,9 @@ public class Model implements MessageHandler {
                 } else {
                     this.board[row][col] = "O";
                 }
+            }
+        }
                 // Send the boardChange message along with the new board 
-                setLegalMoves();
                 this.mvcMessaging.notify("boardChange", this.board);
                 this.whoseMove = !this.whoseMove;
             }
@@ -148,7 +166,7 @@ public class Model implements MessageHandler {
             }
 
             // newGame message handler
-        } else if (messageName.equals("newGame")) {
+         else if (messageName.equals("newGame")) {
             // Reset the app state
             this.newGame();
             // Send the boardChange message along with the new board 
