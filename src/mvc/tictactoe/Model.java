@@ -4,6 +4,8 @@ import java.lang.reflect.Array;
 import java.text.BreakIterator;
 import java.util.ArrayList;
 
+import javax.swing.text.Position;
+
 import com.mrjaffesclass.apcs.messenger.*;
 
 /**
@@ -14,13 +16,16 @@ import com.mrjaffesclass.apcs.messenger.*;
  */
 public class Model implements MessageHandler {
 
+    
     // Messaging system for the MVC
     private final Messenger mvcMessaging;
+
 
     // Model's data variables
     private boolean whoseMove;
     private boolean gameOver;
     private String[][] board;
+
 
     /**
      * Model constructor: Create the data representation of the program
@@ -31,6 +36,7 @@ public class Model implements MessageHandler {
     public Model(Messenger messages) {
         mvcMessaging = messages;
     }
+
 
     /**
      * Initialize the model here and subscribe to any required messages
@@ -46,8 +52,10 @@ public class Model implements MessageHandler {
         this.mvcMessaging.subscribe("newGame", this);
         this.mvcMessaging.subscribe("gameOver", this);
         this.mvcMessaging.subscribe("Tie", this);
-
+        this.whoseMove = false;
+        this.gameOver = false;
     }
+
 
     /**
      * Reset the state for a new game
@@ -67,27 +75,56 @@ public class Model implements MessageHandler {
         this.gameOver = false;
     }
 
+
     public boolean isLegalMove(int[] pos) {
-        for(int[] direction : Directions.points) {
-            if (step(pos, direction, 0, whoseMove)) {
-                return true;
+        if (this.board[pos[0]][pos[1]].equals("")) {
+            for(int[] direction : Directions.points) {
+                int[] newPos = pos;
+                vector(direction, newPos);
+
+                if (isOffBoard(newPos) == true || getSquare(newPos) == 1 || getSquare(newPos) == 0) {
+                    continue;
+                }
+
+                while (isOffBoard(newPos) == false && getSquare(newPos) == -1 && getSquare(newPos) != 0) {
+                    vector(direction, newPos);
+                    if (getSquare(pos) == getSquare(newPos)) {
+                        System.out.println("Legal Move: " + pos[0] + " " + pos[1]);
+                        return true;
+                    }
+                }
             }
         }
         return false;
     }
     
-    public ArrayList<int[]> setLegalMoves() {
+    
+
+    // public ArrayList<int[]> setLegalMoves() {
+    //     ArrayList<int[]> moves = new ArrayList<int[]>();
+    //     for(int i = 0; i < this.board.length; i++) {
+    //         for(int j = 0; j < this.board[i].length; j++) {
+    //             int[] position = {i, j};
+    //             if (isLegalMove(position)) {
+    //                 moves.add(position);
+    //                 System.out.println(position[0] + " " + position[1]);
+    //             }
+    //         }
+    //     }
+        
+    //     return moves;
+    // }
+
+
+    public ArrayList<int[]> testLegalMoves() {
         ArrayList<int[]> moves = new ArrayList<int[]>();
-        for(int i = 0; i < this.board.length; i++) {
-            for(int j = 0; j < this.board[0].length; j++) {
-                int[] position = {i, j};
-                if (isLegalMove(position)) {
-                    moves.add(position);
-                }
-            }
-        }
+        int[] position = {0,0};
+        int[] position2 = {0,1};
+        moves.add(position);
+        moves.add(position2);
         return moves;
     }
+
 
     private boolean step(int[] position, int[] direction, int count, boolean whoseMove) {
         vector(direction, position);
@@ -103,6 +140,7 @@ public class Model implements MessageHandler {
         }
     }
 
+
     private void flip(int[] pos) {
         if(this.board[pos[0]][pos[1]].equals("O")) {
             this.board[pos[0]][pos[1]] = "X";
@@ -110,10 +148,13 @@ public class Model implements MessageHandler {
             this.board[pos[0]][pos[1]] = "O";
         }
     }
+
+
     // pos is the position, just like in vector
     public boolean isOffBoard(int[] pos) {
         return (pos[0] < 0 || pos[0] >= this.board.length || pos[1] < 0 || pos[1] >= this.board.length);
     }
+
 
     // vector[] is directions, pos is current position
     public void vector(int[] vector, int[] pos) {
@@ -121,9 +162,23 @@ public class Model implements MessageHandler {
         pos[1] += vector[1];
     }
 
-    public String getSquare(int[] pos) {
-       return this.board[pos[0]][pos[1]];
+
+    public int getSquare(int[] pos) {
+        if(this.board[pos[0]][pos[1]].equals("O") && whoseMove == false) {
+            return 1;
+        } else if (this.board[pos[0]][pos[1]].equals("O") && whoseMove == true) {
+            return -1;
+        } else if (this.board[pos[0]][pos[1]].equals("X") && whoseMove == false) {
+            return -1;
+        } else if (this.board[pos[0]][pos[1]].equals("X") && whoseMove == true) {
+            return 1;
+        } else if (this.board[pos[0]][pos[1]].equals("")) {
+            return 0;
+        }
+        return 0;
     }
+
+
     @Override
     public void messageHandler(String messageName, Object messagePayload) {
         // Display the message to the console for debugging
@@ -142,22 +197,26 @@ public class Model implements MessageHandler {
             Integer row = new Integer(position.substring(0, 1));
             Integer col = new Integer(position.substring(1, 2));
             // If square is blank...
-
-            ArrayList<int[]> moves = new ArrayList<int[]>();
-            moves = setLegalMoves();
-            for(int i = 0; i < moves.length(); i++){
-            if (this.board[row][col].equals("")) {
+            int[] pos = new int[2];
+            pos[0] = row;
+            pos[1] = col;
+            // ArrayList<int[]> moves = new ArrayList<int[]>();
+            // moves = setLegalMoves();
+            // for(int i = 0; i < moves.size(); i++){
+            if (this.board[row][col].equals("") && isLegalMove(pos) == true) {
                 // ... then set X or O depending on whose move it is
                 if (this.whoseMove) {
                     this.board[row][col] = "X";
+                    this.mvcMessaging.notify("boardChange", this.board);
+                    this.whoseMove = !this.whoseMove;
                 } else {
                     this.board[row][col] = "O";
+                    this.mvcMessaging.notify("boardChange", this.board);
+                    this.whoseMove = !this.whoseMove;
                 }
             }
-        }
+        // }
                 // Send the boardChange message along with the new board 
-                this.mvcMessaging.notify("boardChange", this.board);
-                this.whoseMove = !this.whoseMove;
             }
             if (!board[0][0].equals("") && !board[0][1].equals("") && !board[0][2].equals("") && !board[1][0].equals("") && !board[1][1].equals("")
                     && !board[1][2].equals("") && !board[2][0].equals("") && !board[2][1].equals("") && !board[2][2].equals("")) {
