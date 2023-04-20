@@ -83,6 +83,7 @@ public class Model implements MessageHandler {
                 vector(direction, newPos);
 
                 if (isOffBoard(newPos) == true || getSquare(newPos) == 1 || getSquare(newPos) == 0) {
+                    newPos = pos;
                     continue;
                 }
 
