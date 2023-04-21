@@ -4,8 +4,6 @@ import java.lang.reflect.Array;
 import java.text.BreakIterator;
 import java.util.ArrayList;
 
-import javax.swing.text.Position;
-
 import com.mrjaffesclass.apcs.messenger.*;
 
 /**
@@ -78,24 +76,28 @@ public class Model implements MessageHandler {
 
     public boolean isLegalMove(int[] pos) {
         if (this.board[pos[0]][pos[1]].equals("")) {
-            for(int[] direction : Directions.points) {
-                int[] newPos = pos;
-                vector(direction, newPos);
+                int[] newPos = new int[2];
+                newPos[0] = pos[0];
+                newPos[1] = pos[1];
 
-                if (isOffBoard(newPos) == true || getSquare(newPos) == 1 || getSquare(newPos) == 0) {
-                    continue;
+                if (isOffBoard(newPos) == true) {
+                    return false;
                 }
 
-                while (isOffBoard(newPos) == false && getSquare(newPos) == -1 && getSquare(newPos) != 0) {
-                    vector(direction, newPos);
-                    if (getSquare(pos) == getSquare(newPos)) {
-                        System.out.println("Legal Move: " + pos[0] + " " + pos[1]);
-                        return true;
+                for(int[] direction : Directions.points) {
+                    while (isOffBoard(newPos) == false && getSquare(newPos) == -1 && getSquare(newPos) != 0) {
+                        System.out.println(direction);
+                        vector(direction, newPos);
+                        if (isOffBoard(newPos) == true) {
+                            return false;
+                        } else if (getSquare(newPos) == 1 && isOffBoard(newPos) == false) {
+                            System.out.println("Legal Move: " + pos[0] + " " + pos[1]);
+                            return true;
+                        }
                     }
                 }
             }
-        }
-        return false;
+            return false;
     }
     
     
@@ -109,7 +111,7 @@ public class Model implements MessageHandler {
                     continue;
                 }
 
-                while (isOffBoard(pos) == false && getSquare(pos) == -1 && getSquare(pos) != 0) {
+                while (isOffBoard(pos) == false && getSquare(pos) == -1) {
                     vector(direction, pos);
                     if (getSquare(pos) == 1) {
                         flip(pos);
@@ -141,7 +143,7 @@ public class Model implements MessageHandler {
 
     // pos is the position, just like in vector
     public boolean isOffBoard(int[] pos) {
-        return (pos[0] < 0 || pos[0] >= this.board.length || pos[1] < 0 || pos[1] >= this.board.length);
+        return (pos[0] >= 0 && pos[0] < 8) && (pos[1] >= 0 && pos[1] < 8);
     }
 
 
@@ -185,6 +187,7 @@ public class Model implements MessageHandler {
             String position = (String) messagePayload;
             Integer row = new Integer(position.substring(0, 1));
             Integer col = new Integer(position.substring(1, 2));
+            System.out.println(row + " " + col);
             // If square is blank...
             int[] pos = new int[2];
             pos[0] = row;
