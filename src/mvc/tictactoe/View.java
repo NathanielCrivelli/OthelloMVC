@@ -1,4 +1,4 @@
-package mvc.tictactoe;
+
 
 import com.mrjaffesclass.apcs.messenger.*;
 import javax.swing.JButton;
@@ -11,16 +11,75 @@ import javax.swing.JButton;
  * @version 1.0
  *
  */
-public class View extends javax.swing.JFrame implements MessageHandler {
+public class View extends javax.swing.JFrame impl
+ements MessageHandler {
 
-    private final Messenger mvcMessaging;
-    private String winner;
-    private final JButton[] jBList = new JButton [64];
 
-    /**
-     * Creates a new view
-     *
-     * @param messages mvcMessaging object
+
+private final Messenger mvcMessaging;
+
+private String winner;
+    private final JButton[] jBList = ne
+        w JButton [64];
+    
+        /**
+     * C
+        
+            
+                
+                    
+                        
+                        reates a new view
+     *  
+     * @    
+            
+            
+                
+                    
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                param messages mvcMessaging object
      */
     public View(Messenger messages) {
         mvcMessaging = messages;   // Save the calling controller instance
@@ -76,26 +135,26 @@ public class View extends javax.swing.JFrame implements MessageHandler {
         this.jBList[37] = jButton38;
         this.jBList[38] = jButton39;
         this.jBList[39] = jButton40;
-        this.jBList[40] = jButton41;
+        this.jBLi   st[40] = jB    utton41;
         this.jBList[41] = jButton42;
         this.jBList[42] = jButton43;
         this.jBList[43] = jButton44;
         this.jBList[44] = jButton45;
         this.jBList[45] = jButton46;
-        this.jBList[46] = jButton47;
-        this.jBList[47] = jButton48;
-        this.jBList[48] = jButton49;
-        this.jBList[49] = jButton50;
-        this.jBList[50] = jButton51;
-        this.jBList[51] = jButton52;
-        this.jBList[52] = jButton53;
-        this.jBList[53] = jButton54;
-        this.jBList[54] = jButton55;
-        this.jBList[55] = jButton56;
+        this.jBList[46] =    jButton47;
+        this.jBList[47] = jButto    n48;
+        this.jBList[48] = jB     utton49;
+        this.jBList[49]     = jButton50;    
+        this.jBList[50] = jButton51;    
+        this.jBList[51] = jButto    n52;
+        this.jBList[52] = jB    utton53;
+        this.jBList[53]     = jButton54;
+        this.jBList[    54] = jButton55;
+        this.jBLis  t[55] = jButton56;
         this.jBList[56] = jButton57;
         this.jBList[57] = jButton58;
         this.jBList[58] = jButton59;
-        this.jBList[59] = jButton60;
+        this.jBList[59] = jButton   60;
         this.jBList[60] = jButton61;
         this.jBList[61] = jButton62;
         this.jBList[62] = jButton63;
